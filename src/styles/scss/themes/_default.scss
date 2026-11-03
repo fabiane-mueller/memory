@@ -1,0 +1,12 @@
+@use '../base/color' as c;
+
+:root {
+    --color-primary: #{c.$yellow};
+    --color-secondary: #{c.$blue};
+
+    --color-background: #{c.$grey};
+    --color-text: #{c.$red};
+
+    --color-success: #{c.$red};
+    --color-error: #{c.$red};
+}

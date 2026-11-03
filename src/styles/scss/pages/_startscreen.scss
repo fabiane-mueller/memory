@@ -1,0 +1,7 @@
+@use "../base/_color" as c;
+
+
+
+body{
+    background-color:#{c.$grey}; 
+}
