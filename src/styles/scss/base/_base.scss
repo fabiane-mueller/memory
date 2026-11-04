@@ -1,0 +1,14 @@
+@use "../abstract/mixins" as mix;
+
+
+
+header, section, footer, main{
+    @include mix.flex-center;
+}
+
+
+.content{
+    width:100%;
+    max-width:1217px;
+    height:100%;
+}

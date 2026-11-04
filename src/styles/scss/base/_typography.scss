@@ -1,3 +1,7 @@
+@use "../abstract/functions" as fct;
+@use "../base/color" as c;
+@use "../abstract/variables" as vari;
+
 /* almarai-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -23,6 +27,15 @@
   font-weight: 400;
   src: url('/assets/fonts/red-rose-v25-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+/* red-rose-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Red Rose';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/red-rose-v25-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 /* orbitron-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -47,3 +60,20 @@
   font-weight: 800;
   src: url('/assets/fonts/orbitron-v35-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+
+//Schriftvariabeln
+$font-primary: 'Red Rose', sans-serif;
+$font-secondary: 'Almarai', sans-serif;
+
+
+// Überschriften
+
+h1{
+  font-size: fct.px-to-rem(140);
+  font-family:$font-primary;
+  font-weight: 700;
+  color:c.$white;
+  margin:vari.$spacing-0;
+}
+

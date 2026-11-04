@@ -1,0 +1,36 @@
+@use "../base/color" as c;
+@use "../base/typography" as typo;
+@use "../abstract/variables" as vari;
+
+// BASE BUTTON
+.btn {
+  padding: vari.$spacing-lg;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+// PRIMARY BUTTON
+.btn-primary {
+  background-color: #b58a5d;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #987047;
+  }
+}
+
+// SECONDARY BUTTON
+.btn-secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #333333;
+  }
+}

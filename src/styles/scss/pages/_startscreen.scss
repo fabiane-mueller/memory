@@ -1,7 +1,19 @@
 @use "../base/_color" as c;
+@use "../base/typography" as typo;
+@use "../abstract/functions" as fct;
+@use "../abstract/variables" as vari;
 
 
 
 body{
     background-color:#{c.$grey}; 
+}
+
+
+.hero-eyebrow{
+    font-family: typo.$font-secondary;
+    font-size: fct.px-to-rem(48);
+    color:c.$white;
+    margin:vari.$spacing-0;
+  
 }
