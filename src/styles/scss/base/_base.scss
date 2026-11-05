@@ -16,6 +16,18 @@ header, section, footer, main{
 }
 
 
+.flex-center{
+    @include mix.flex-center;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    color: inherit;
+    font-size: inherit;
+}
+
 :root {
   --color-primary: #{c.$yellow};
   --background-secondary:transparent;
