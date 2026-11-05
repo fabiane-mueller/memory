@@ -1,0 +1,34 @@
+@use "../abstract/variables" as v;
+
+.setting-bar {
+  ul {
+    padding: v.$spacing-lg v.$spacing-md;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: row;
+    gap: v.$spacing-md;
+
+    li {
+      font-family: var(--font-secondary);
+      list-style-type: none;
+      background: url(../assets/icons/devider.svg) no-repeat right center;
+      font-size: 1.25rem;
+      padding:0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-right: 40px ;
+
+      &:last-child{background:none;}
+      
+      .btn-primary {
+        background-color: var(--color-primary);
+        font-size:1.25rem;
+        gap:15px;
+      }
+      &.checked{
+        background: url(../assets/icons/Line-settingbar.svg) no-repeat right center;
+      }
+    }
+  }
+}

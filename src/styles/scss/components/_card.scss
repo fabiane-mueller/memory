@@ -1,0 +1,54 @@
+@use "../abstract/mixins" as mix;
+@use "../base/color" as c;
+
+.card {
+  height: 120px;
+  aspect-ratio: 1 / 1;
+  background: transparent;
+  border: 0;
+  perspective: 1000px;
+  padding: 0;
+
+  &__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 300ms ease-in-out;
+  }
+
+  &__face {
+    @include mix.flex-center;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    background: var(--card-background);
+    backface-visibility: hidden;
+    border-radius: var(--card-border-radius);
+
+    img {
+      width: 60px;
+      height: 48px;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+      background: #e8f3f0;
+
+      img {
+        width: 66px;
+        height: auto;
+      }
+
+      &-match {
+        background: var(--match-background);
+        border: 5px solid var(--match-border);
+        box-shadow: var(--match-shadow);
+      }
+    }
+  }
+
+  &:hover &__inner {
+    transform: rotateY(180deg);
+  }
+}

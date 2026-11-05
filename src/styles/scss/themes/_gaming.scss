@@ -1,0 +1,24 @@
+@use "../base/color" as c;
+@use "../base/typography" as typo;
+
+[data-theme="gaming"] {
+   --color-primary: #{c.$magenta};
+  --card-background: linear-gradient(
+    -135deg,
+    #{c.$dark-magenta} 0%,
+    #{c.$royal} 100%
+  );
+  --background-secondary: rgba(237, 27, 118, 0.08);
+  --background-secondary---hover: rgba(237, 27, 118, 0.14);
+  --card-image-background: #{c.$dark-turquoise};
+  --card-border-radius: 12px;
+
+  --font-primary:#{typo.$font-orb};
+  --font-secondary:#{typo.$font-alm};
+
+  --match-background: #fff;
+  --match-border: #{c.$dark-magenta};
+  --match-shadow: 6px 6px 8px 0px rgba(194, 20, 111, 0.3);
+
+  --btn-border-radius:10px;
+}

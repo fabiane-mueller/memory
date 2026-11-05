@@ -2,6 +2,7 @@
 @use "../base/typography" as typo;
 @use "../abstract/functions" as fct;
 @use "../abstract/variables" as vari;
+@use "../abstract/mixins" as mix;
 
 
 
@@ -16,4 +17,12 @@ body{
     color:c.$white;
     margin:vari.$spacing-0;
   
+}
+
+
+.theme-box{
+    display:flex;
+    align-items: center;
+    gap:6px;
+    margin-bottom: vari.$spacing-xs;
 }

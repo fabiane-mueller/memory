@@ -1,0 +1,27 @@
+@use "../base/color" as c;
+@use "../base/typography" as typo;
+
+[data-theme="coding"] {
+
+  --color-primary: #{c.$turquoise};
+  --color-text-on-primary: #{c.$grey};
+  --background-secondary:rgba(134,233,214,0.14);
+  --background-secondary---hover:rgba(134,233,214,0.26);
+  --color-text-on-secondary: #{c.$white};
+
+  --font-primary:#{typo.$font-rose};
+  --font-secondary:#{typo.$font-alm};
+
+  --card-background: linear-gradient(
+    -135deg,
+    #{c.$light-turquoise} 0%,
+    #{c.$dark-turquoise} 100%
+  );
+
+  --card-image-background: #{c.$dark-turquoise};
+  --card-border-radius: 0px;
+
+  --match-background: #fff;
+  --match-border: #{c.$turquoise};
+  --match-shadow: 6px 6px 8px 0px rgba(77, 213, 188, 0.3);
+}

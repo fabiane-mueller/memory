@@ -1,4 +1,6 @@
 @use "../abstract/mixins" as mix;
+@use "_color.scss" as c;
+@use "typography" as typo;
 
 
 
@@ -11,4 +13,19 @@ header, section, footer, main{
     width:100%;
     max-width:1217px;
     height:100%;
+}
+
+
+:root {
+  --color-primary: #{c.$yellow};
+  --background-secondary:transparent;
+  --color-text-on-primary: #{c.$grey};
+  --color-text-on-secondary: #{c.$white};
+
+  --font-primary:#{typo.$font-rose};
+  --font-secondary:#{typo.$font-alm};
+
+  --card-background: #f6f6f6;
+  --card-image-background: #ffffff;
+  --card-border-radius: 8px;
 }
