@@ -8,16 +8,26 @@
     <script type="module" src="/src/main.ts"></script>
 </head>
 
-<body style="background: #fff;" data-theme="coding">
-    <button class="btn btn--primary">
-        <img class="btn-icon" src="public/assets/icons/controller.svg" alt="Icon Controller">
-        <span>Play</span>
-        <img class="btn-icon arrow-icon" src="public/assets/icons/arrow.svg" alt="Icon Arrow">
-    </button>
-    <button class="btn btn--secondary">
-        <img class="btn-icon" src="public/assets/icons/exit.svg" alt="Icon Exit">
-        <span>Exit game</span>
-    </button>
+<body style="background: #fff;">
+    <div style="background:black; width:300px;">
+        <button class="btn btn--primary">
+            <img class="btn__icon btn__icon--rotate" src="/assets/icons/controller.svg" alt="">
+            <span class="btn__text">Play</span>
+            <img class="btn__icon btn__icon--scale" src="/assets/icons/Arrow.svg" alt="">
+        </button>
+        <button class="btn btn--secondary">
+            <img class="btn__icon btn__icon--scale" src="public/assets/icons/exit.svg" alt="Icon Exit">
+            <span class="btn__text">Exit game</span>
+        </button>
+        <button class="btn btn--teritiary">
+            <img class="btn__icon btn__icon--rotate-scale" src="public/assets/icons/play.svg" alt="Icon Play">
+            <span class="btn__text">Start</span>
+        </button>
+        <button class="btn btn--teritiary" disabled>
+            <img class="btn__icon btn__icon--rotate-scale" src="public/assets/icons/play.svg" alt="Icon Play">
+            <span class="btn__text">Start</span>
+        </button>
+    </div>
     <fieldset class="theme-selection">
         <legend>Select a theme:</legend>
 
@@ -38,9 +48,11 @@
             <li id="csettingTheme">Game theme</li>
             <li class="checked" id="csettingPlayer">Player</li>
             <li id="csettingBoardSize">Board size</li>
-            <li><button class="btn btn-primary"> <img class="btn-icon" src="public/assets/icons/play.svg"
-                        alt="Icon Exit"><span>Start</span></button></li>
         </ul>
+        <button class="btn btn--teritiary">
+            <img class="btn__icon btn__icon--rotate-scale" src="public/assets/icons/play.svg" alt="Icon Play">
+            <span class="btn__text">Start</span>
+        </button>
     </section>
     <div class="" data-theme="coding">
         <section id="field">
