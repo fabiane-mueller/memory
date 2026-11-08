@@ -4,7 +4,7 @@
 @use "../abstract/variables" as vari;
 @use "../abstract/mixins" as mix;
 
-body {
+#homepage {
   background-color: #{c.$grey};
 }
 

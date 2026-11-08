@@ -3,6 +3,9 @@
 @use "typography" as typo;
 
 
+body{
+    padding-top:120px;
+}
 
 header, section, footer, main{
     @include mix.flex-center;

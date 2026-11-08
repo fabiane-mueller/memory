@@ -17,10 +17,12 @@
 @use 'layout/_header';
 @use 'layout/_footer';
 @use 'layout/_navigation';
+@use 'layout/_game-board';
 
 // Pages
 @use 'pages/_startscreen.scss';
 @use 'pages/_home.scss';
+@use 'pages/_settings.scss';
 
 // Themes
 @use 'themes/_default.scss';

@@ -2,7 +2,6 @@
 @use "../base/color" as c;
 
 .card {
-  height: 120px;
   aspect-ratio: 1 / 1;
   background: transparent;
   border: 0;
@@ -14,7 +13,7 @@
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    transition: all 300ms ease-in-out;
+    transition: all .5s ease-in-out;
   }
 
   &__face {
@@ -25,6 +24,7 @@
     background: var(--card-background);
     backface-visibility: hidden;
     border-radius: var(--card-border-radius);
+
 
     img {
       width: 60px;
