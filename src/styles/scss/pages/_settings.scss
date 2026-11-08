@@ -1,0 +1,65 @@
+@use "../base/typography" as typo;
+
+.theme-selection{
+font-family:typo.$font-alm;
+margin-bottom: 30px;
+border:0px;
+    legend{
+     font-size:1.5rem;
+     font-weight:bold;
+     margin-bottom: 10px;
+     display: flex;
+
+
+     img{
+        height:32px;
+        width:32px;
+        padding-right:10px;
+     }
+    }
+
+}
+
+.theme-box{
+    margin-left:25px;
+    display: flex;
+    gap: 7px;
+
+    label{
+        margin-bottom: 7px;
+    }
+    input{
+        margin-bottom: 7px;
+    }
+}
+
+
+.setting-cols{
+    display:flex;
+    flex-wrap:wrap;
+    gap:40px;
+}
+
+.settings__choosebox--themes {
+  flex: 1 1 400px;
+  min-width: 0;
+}
+
+.settings__previewbox {
+  flex: 1 1 400px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.setting-bar{
+    margin-top:40px;
+    background-color: #f6f6f6;
+    padding:0px 10px;
+ ul{
+    padding:10px;
+    li{
+        padding:20px 40px 20px 0px;
+    }
+ }
+}

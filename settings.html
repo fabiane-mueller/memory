@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory</title>
+</head>
+
+<body>
+    <script type="module" src="/src/main.ts"></script>
+    <!-- <link rel="stylesheet" src="src/styles/scss/main.scss"> -->
+
+    <section class="settings">
+        <div class="content">
+            <h2 class="settings__title">Settings</h2>
+            <div class="setting-cols">
+                <div class="settings__choosebox settings__choosebox--themes">
+                    <fieldset class="theme-selection">
+                        <legend><img src="public/assets/icons/palette.svg" alt="Icon Palette"><span>Game themes</span>
+                        </legend>
+                        <div class="theme-box">
+                            <input type="radio" id="coding-theme" name="theme" value="coding">
+                            <label for="coding-theme">Coding theme</label>
+                            <span class="theme-arrow"></span>
+                        </div>
+                        <div class="theme-box">
+                            <input type="radio" id="gaming-theme" name="theme" value="gaming">
+                            <label for="gaming-theme">Gaming theme</label>
+                            <span class="theme-arrow"></span>
+                        </div>
+                    </fieldset>
+                    <fieldset class="theme-selection">
+                        <legend><img src="public/assets/icons/chess_pawn.svg" alt="Icon Player"><span>Choose
+                                Player</span>
+                        </legend>
+                        <div class="theme-box">
+                            <input type="radio" id="coding-theme" name="theme" value="coding">
+                            <label for="coding-theme">Blue</label>
+                            <span class="theme-arrow"></span>
+                        </div>
+                        <div class="theme-box">
+                            <input type="radio" id="gaming-theme" name="theme" value="gaming">
+                            <label for="gaming-theme">Orange</label>
+                            <span class="theme-arrow"></span>
+                        </div>
+                    </fieldset>
+                    <fieldset class="theme-selection">
+                        <legend><img src="public/assets/icons/style.svg" alt="Icon Board size"><span>Board size</span>
+                        </legend>
+                        <div class="theme-box">
+                            <input type="radio" id="coding-theme" name="theme" value="coding">
+                            <label for="coding-theme">16 Cards</label>
+                            <span class="theme-arrow"></span>
+                        </div>
+                        <div class="theme-box">
+                            <input type="radio" id="gaming-theme" name="theme" value="gaming">
+                            <label for="gaming-theme">24 Cards</label>
+                            <span class="theme-arrow"></span>
+                        </div>
+                        <div class="theme-box">
+                            <input type="radio" id="gaming-theme" name="theme" value="gaming">
+                            <label for="gaming-theme">36 Cards</label>
+                            <span class="theme-arrow"></span>
+                        </div>
+                    </fieldset>
+                </div>
+                <section class="settings__previewbox">
+                    <img src="public/assets/img/pre-coding.png" alt="" id="preCoding">
+                    <section class="setting-bar">
+                        <ul>
+                            <li id="csettingTheme">Game theme</li>
+                            <li class="checked" id="csettingPlayer">Player</li>
+                            <li id="csettingBoardSize">Board size</li>
+                        </ul>
+                        <button class="btn btn--teritiary">
+                            <img class="btn__icon btn__icon--rotate-scale" src="public/assets/icons/play.svg"
+                                alt="Icon Play">
+                            <span class="btn__text">Start</span>
+                        </button>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
