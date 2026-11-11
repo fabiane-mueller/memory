@@ -14,7 +14,17 @@
     height: 100%;
     transform-style: preserve-3d;
     transition: all .5s ease-in-out;
+    
+  
   }
+   &.flip {
+        .card__inner {
+            transform: rotateY(180deg);
+        }
+    }
+
+  
+
 
   &__face {
     @include mix.flex-center;
@@ -48,7 +58,5 @@
     }
   }
 
-  &:hover &__inner {
-    transform: rotateY(180deg);
-  }
+
 }

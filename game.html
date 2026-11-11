@@ -9,52 +9,28 @@
 
 <body id="homepage" data-theme="coding">
     <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/game.ts"></script>
     <!-- <link rel="stylesheet" src="src/styles/scss/main.scss"> -->
     <section class="topbar">
         <div class="content">
             <div class="topbar__score">
-                <div class="my-score" id="myScore"></div>
-                <div class="computer-score" id="computerScore"></div>
+                <div class="player player--one" id="playerOne"></div>
+                <div class="player player--two" id="playerTwo"></div>
             </div>
             <div class="topbar__current-player">
-                <p>Current player:</p>
+                <p>Current player: <span id="currentPlayer"></span></p>
             </div>
             <div class="topbar__exit">
-                <button class="btn btn--secondary">
-                    <img class="btn-icon" src="public/assets/icons/exit.svg" alt="Icon Exit">
+                <button id="exitGame" class="btn btn--secondary">
+                    <img class="btn-icon" src="public/assets/icons/move_item.svg" alt="Icon Exit">
                     <span>Exit game</span>
                 </button>
             </div>
         </div>
     </section>
 
-    <div class="game-board game-board--16">
-        <button class="card">
-            <div class="card__inner">
-                <div class="card__face"></div>
-                <div class="card__face card__face--back"><img src="public/assets/img/pilz.png" alt="Pilz"></div>
-            </div>
-        </button>
-        <button class="card">
-            <div class="card__inner">
-                <div class="card__face"></div>
-                <div class="card__face card__face--back"><img src="public/assets/img/pilz.png" alt="Pilz"></div>
-            </div>
-        </button>
-        <button class="card">
-            <div class="card__inner">
-                <div class="card__face"></div>
-                <div class="card__face card__face--back"><img src="public/assets/img/pilz.png" alt="Pilz"></div>
-            </div>
-        </button>
-        <button class="card">
-            <div class="card__inner">
-                <div class="card__face"></div>
-                <div class="card__face card__face--back"><img src="public/assets/img/pilz.png" alt="Pilz"></div>
-            </div>
-        </button>
-
-        <!-- weitere Karten -->
+    <div id="gameBoard" class="game-board">
+       
 
     </div>
 

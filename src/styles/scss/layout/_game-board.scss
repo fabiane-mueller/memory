@@ -38,3 +38,16 @@
     font-family: typo.$font-rose;
   }
 }
+
+.topbar__score{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+
+.player{
+  padding-left:30px;
+
+
+}
